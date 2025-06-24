@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Quickly create React/Next.js components with CSS modules",
   "type": "module",
-  "main": "mkcomp.ts",
+  "main": "dist/mkcomp.js",
+  "types": "dist/mkcomp.d.ts",
   "scripts": {
-    "mkcomp": "ts-node ./mkcomp.ts"
+    "build": "tsc",
+    "mkcomp": "node dist/mkcomp.js"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
