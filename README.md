@@ -1,21 +1,21 @@
 # mkcomp
 
-A script I use to quickly create React/Next.js components with CSS modules.
+Quickly create React/Next.js components with CSS modules.
 
 ## Usage
 
-1. Install the package from GitHub
+1. Install the package from GitHub as a dev dependency
 
 ```bash
-npm install mustafa-ozturk/mkcomp
+npm install --save-dev mustafa-ozturk/mkcomp
 ```
 
-2. Add this script to your package.json (assuming you have ts-node installed)
+2. Add this script to your package.json
 
-```bash
+```json
 {
   "scripts": {
-    "mkcomp": "ts-node ./node_modules/reponame/create-component.ts"
+    "mkcomp": "node ./node_modules/mkcomp/dist/mkcomp.js"
   }
 }
 ```
@@ -33,8 +33,3 @@ This will create:
   ├── ComponentName.tsx
   └── ComponentName.module.css
 ```
-
-## Requirements
-
-- Node.js
-- ts-node
